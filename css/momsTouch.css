@@ -1,0 +1,654 @@
+.innerBox{
+    max-width:1300px;
+    margin:0 auto;
+    /* background-color: pink; */
+    position: relative;
+}
+
+
+/* -------------------header---------------- */
+
+header{
+  border-bottom: 2px solid salmon;
+}
+.header>.innerBox{
+    position:relative;
+}
+.logo{
+    text-align: center;
+    padding: 30px 0;
+}
+.leftMenu{
+    position:absolute;
+    top:30px;
+    display: flex;
+}
+.leftMenu>li{
+    margin: 0 10px;
+}
+.leftMenu img{
+    width:35px;
+}
+.rightMenu{
+    position:absolute;
+    display: flex;
+    right:0;
+    top:30px;
+}
+.rightMenu>li{
+    margin:0 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.hamBtn,
+.loginBtn,
+.closeBtn{
+    display: none;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+}
+#nav>li{
+    padding:30px 55px;
+    text-align: center;
+    position:relative;
+    padding-bottom:20px;
+}
+#nav>li>a{
+    font-size: 20px;
+    font-weight:600;
+}
+.sub{
+    position:absolute;
+    padding-top:30px;
+    line-height: 2;
+    width:100%;
+    background-color: white;
+    height:250px;
+    left:0;
+    top:72px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 200;
+}
+.subBg{
+    position:absolute;
+    width:100%;
+    height:250px;
+    background-color: white;
+    top:168px;
+    display: none;
+    z-index: 200;
+}
+
+
+/* -------------------mainBannerWrap---------------- */
+
+#contentWrap{
+    position:relative;
+}
+#mainBanner{
+    width:100%;
+    overflow: hidden;
+    position:relative;
+}
+/* .banner{
+    width:400%;
+}
+.banner>li{
+    float: left;
+    width:25%;
+}
+#mainBanner>.arrow{
+   position:absolute;
+   top:50%;
+   transform: translateY(-50%);
+   display: flex;
+   width:100%;
+   justify-content: space-between;
+}
+#mainBanner>.pager{
+    position:absolute;
+    bottom:50px;
+    left:25%;
+    display: flex;
+}
+.pager>li{
+    width:20px;
+    height:20px;
+    margin:0 15px;
+    background-color: #eee;
+    border-radius: 50%;
+    text-indent: -99999px;
+} */
+.bannerOverBtn{
+    display: flex;
+    position: absolute;
+    bottom:10px;
+    right:10%;
+    width:30%;
+    height:15%;
+    z-index: 110;
+}
+.bannerOverBtn>div{
+    width:250px;
+    height:100%;
+}
+.bannerOverBtn>div>a{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bannerOverBtn .txt{
+    display: table;
+}
+.bannerOverBtn>div p{
+    display: table-cell;
+    vertical-align: middle;
+    color:white;
+    font-size: 23px;
+    font-weight:500;
+}
+.bannerOverBtn>div img{
+    width: 20%;
+    padding-right: 10px;
+}
+.bannerOverBtn>.position{
+    background-color: #f6a400;
+    border-radius: 50px 0 0 0;
+}
+.bannerOverBtn>.inquiry{
+    background-color: #654a39;
+    border-radius:0 0 50px 0;
+}
+
+/* -------------------momsMenuWrap---------------- */
+
+.textBox{
+    padding-top:160px;
+    display: flex;
+    justify-content: space-between;
+}
+.tab{
+    padding-top:30px;
+    display: flex;
+    justify-content: center;
+}
+.tab>li{
+    padding:0 15px;
+    border-right: 1px solid black;
+    font-weight: 500;
+}
+.tab>li:nth-child(3){
+    border:none;
+}
+.tab>li:hover a{
+    color:#ccc;
+}
+.contentBox{
+    position:relative;
+    margin-top: 30px;
+    text-align: center;
+}
+.contentBox .contents{
+    width:100%;
+    box-sizing: border-box;
+    padding:0 50px;
+    overflow: hidden;
+    /* display: inline-block; */
+    margin:0 auto;
+    /* background: green; */
+    height: 300px;
+}
+.contentBox .contents>.bx-wrapper{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.contentBox .contents>.bx-wrapper:first-child{
+  opacity: 1;
+}
+
+.contentBox .contents>.bx-wrapper>.bx-viewport{
+  
+}
+
+/* .eat{
+    width:200%;
+    display: flex;
+}
+.eat>li{
+    width:100%;
+}
+.eat img{
+    width:90%;
+    transition-duration: 0.5s;
+}
+.eat>li:hover img{
+    transform:scale(1.1);
+}
+.eat p{
+    width:90%;
+    text-align:center;
+    padding-top:20px;
+} */
+
+/* .contentBox>.arrow{
+    position:absolute;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.contentBox>.arrow>li{
+    width:5%;
+}
+.contentBox>.arrow img{
+    width:100%;
+} */
+.contents>.bx-wrapper .bx-prev {
+    background-image: url(../images/leftBtn.png);
+    left:-30px;
+  }
+  .contents>.bx-wrapper .bx-next {
+    background-image: url(../images/rightBtn.png);
+    right:-30px;
+  }
+/* -------------------momsStroyWrap---------------- */
+.momsStoryWrap{
+    padding-top:160px;
+}
+.momsStoryWrap>.innerBox{
+    text-align: center;
+}
+.momsStoryWrap video{
+    width:100%;
+    padding-top:60px;
+}
+
+
+/* -------------------momsSnsWrap---------------- */
+
+.momsSnsWrap{
+    padding-top:160px;
+}
+.snsImage{
+    background-image: url(../images/bg_sns.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    gap:0;
+    height:300px;
+}
+.snsImage img{
+   width:80%;
+   transform:translateY(30%);
+}
+.snsImage>li:hover img{
+    filter:brightness(50%);
+}
+
+/* -------------------promotionWrap---------------- */
+.promotionWrap{
+    text-align: center;
+    background-image: url(../images/pattern.jpg);
+}
+
+.promotionWrap h2{
+    padding-top:40px;
+}
+.promotion{
+    padding:60px 0 60px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    
+}
+.promotion>li{
+    width:23%;
+
+}
+.promotion>li img{
+    width:100%;
+}
+
+
+
+/* -------------------etcWrap---------------- */
+
+.etcWrap{
+    padding-top:160px;
+}
+.etcWrap>.innerBox{
+    text-align: center;
+}
+.etc{
+    display: flex;
+    justify-content: center;
+}
+.etc>li{
+    padding:0 80px;
+}
+.etc>li p{
+    padding-top:30px;
+}
+.etc>li:hover img{
+    filter:brightness(70%);
+}
+
+
+/* -------------------footer---------------- */
+footer{
+    margin-top:160px;
+    background-color: #51433a;
+}
+.footTop{
+    border-bottom: 0.5px solid white;
+}
+.footMenu{
+    display: flex;
+    padding:20px 0 20px 100px;
+}
+.footMenu>li{
+    padding:0 30px;
+}
+.footMenu a{
+    color:white;
+}
+.footBottom{
+    padding:40px 0;
+}
+.footBottom>.innerBox{
+    display: flex;
+}
+address{
+    color:#ddd;
+    font-weight:100;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left:130px;
+    width:60%;
+}
+address>p:first-child{
+    font-size: 20px;
+    font-weight: 400;
+}
+.snsBtn{
+    width:15%;
+}
+.sns{
+    display: flex;
+    justify-content: space-around;
+}
+.sns img{
+    width:65%;
+}
+
+/* ----------------반응형---------------- */
+@media screen and (max-width:1600px){
+}
+@media screen and (max-width:1280px){
+    #nav>li>a {
+        font-size: 17px;
+    }
+    .sub{
+        font-size: 16px;
+    }
+    .bannerOverBtn {
+        bottom:20px;
+    }
+    .bannerOverBtn>div p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1080px){
+    .rightMenu>li {
+        font-size: 14px;
+    }
+    #nav>li {
+        padding: 30px 40px;
+    }
+    .sub{
+        font-size: 15px;
+    }
+    .bannerOverBtn>div p {
+        font-size: 16px;
+    }
+    .textBox{
+        padding-top:120px;
+    }
+    .snsImage {
+        height:260px;
+    }
+    .promotionWrap {
+        margin-top: 80px;
+    }
+    
+    .etc>li {
+        padding: 0 60px;
+    }
+    .etc img{
+        width:100%;
+    }
+}
+@media screen and (max-width:880px){
+    .innerBox{
+        padding:0 10px;
+        width:100%;
+        box-sizing: border-box;
+    }
+    body{
+        font-size: 16px;
+    }
+    
+    #nav>li {
+        padding: 30px 30px;
+    }
+    .textBox{
+        padding-top:90px;
+    }
+    .etc>li {
+        padding: 0 50px;
+    }
+    .footMenu>li {
+        padding: 0 20px;
+    }
+    address {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:767px){
+    .contentBox .contents{
+        padding:0;
+    }
+    .leftMenu img{
+        display: none;
+    }
+    .rightMenu{
+        display: none;
+    }
+    .logo{
+        padding:10px 0 20px;
+    }
+    #nav {
+        display: none;
+        position: fixed;
+        z-index: 150;
+        width: 100%;
+        background: white;
+        top: 0;
+        height: 100vh;
+        padding-top : 100px;
+    }
+    #nav>li{
+        padding:0;
+    }
+    #nav>li>a{
+        display: block;
+        border-bottom: 2px dashed #eee;
+        padding:40px 0;
+    }
+    .loginBtn{
+        display: block;
+        position:absolute;
+        left:10%;
+        top:35px;
+    }
+    .loginBtn img {
+        width: 30px;
+    }
+    .closeBtn{
+        display: block;
+        position:absolute;
+        right:10%;
+        top:25px;
+    }
+    .closeBtn img{
+        width:30px;
+    }
+    .sub{
+        position:static;
+        height:auto; 
+        /* display: none; */
+    }
+    #nav:hover .sub{
+        display: none;
+    }
+    .hamBtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    .hamBtn img{
+        width:38px;
+    }
+
+    .contents>.bx-wrapper .bx-prev {
+        left:-10px;
+      }
+      .contents>.bx-wrapper .bx-next {
+        
+        right:-10px;
+      }
+    .textBox{
+        display: block;
+        
+    }
+    .momsStoryWrap,
+    .momsSnsWrap,
+    .etcWrap {
+        padding-top: 80px;
+    }
+    .bannerOverBtn>div img {
+        width: 25%;
+    }
+    .bannerOverBtn>div p {
+        font-size: 14px;
+    }
+    .promotionWrap {
+        margin-top: 0px;
+    }
+    .momsStoryWrap video {
+        padding-top: 40px;
+    }
+    .footTop{
+        display: none;
+    }
+    address{
+        display: none;
+    }
+    address>p:first-child {
+        font-size: 17px;
+    }
+    .footBottom>.innerBox {
+        justify-content: center;
+    }
+    .snsBtn {
+        width: 30%;
+    }
+    footer {
+        margin-top: 100px;
+    }
+    
+}
+@media screen and (max-width:560px){
+    body{
+        font-size: 15px;
+    }
+    body h2{
+        font-size: 18px;
+    }
+    .closeBtn{
+        top:33px;
+    }
+    #nav>li>a{
+        padding:20px 0;
+    }
+    .textBox{
+        padding-top:30px;
+    }
+    .contentBox .contents {
+       height:50vw;
+    }
+    .eat p {
+        font-size: 13px;
+    }
+    .momsStoryWrap{
+        padding-top:50px;
+    }
+    .momsSnsWrap,
+    .etcWrap {
+        padding-top: 80px;
+    }
+    .bannerOverBtn {
+        display: none;
+    }
+    .snsBtn {
+        width: 50%;
+    }
+    .snsImage {
+        background-size: cover;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .snsImage img {
+        transform:none;
+        padding:10px;
+    }
+    .snsImage>li{
+        width:40%;
+    }
+    .snsImage>li:nth-child(5){
+        display: none;
+    }
+    .sns>li{
+        padding:0 10px;
+    }
+    .promotionWrap {
+        margin-top: 80px;
+    }
+    .promotion>li {
+        width: 49%;
+    }
+    
+
+    .etc>li {
+        padding: 0 30px;
+    }
+    .etc>li p {
+        display: none;
+    }
+    footer{
+        margin-top:80px;
+    }
+    .sns img {
+        width: 95%;
+    }
+}

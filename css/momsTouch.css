@@ -614,9 +614,6 @@ address>p:first-child{
     body h2{
         font-size: 18px;
     }
-    .closeBtn{
-        top:33px;
-    }
     #nav>li>a{
         padding:20px 0;
     }

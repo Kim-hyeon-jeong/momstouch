@@ -1,0 +1,15 @@
+.innerBox{
+    max-width:1200px;
+    margin:0 auto;
+}
+/* pagerSelector를 #btn으로 바꾸면 소스변경되므로 아래 선택자들 바꿔줘야함 */
+#btn>.bx-pager{
+    display: flex;
+}
+#btn>.bx-pager .bx-pager-item{
+    margin-left: 10px;
+    background:#ccc;
+}
+#btn>.bx-pager .bx-pager-item a.active{
+    background-color: pink;
+}
